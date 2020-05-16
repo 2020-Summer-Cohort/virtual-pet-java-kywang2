@@ -11,10 +11,15 @@ Play with Larry the Lizard and let him be your new favorite roommate!  Who says 
 Below is actual play from the application:
 
 Hello, I am Larry the Lizard! This is how I feel:
+
 Hunger: 38
+
 Thirst: 36
+
 Play: 42
+
 Sleep: 32
+
 What do you want to do?
 1. Feed Larry Food.
 2. Give Larry Water.
