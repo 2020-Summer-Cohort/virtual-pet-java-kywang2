@@ -22,9 +22,14 @@ What do you want to do?
 4. Let Larry Sleep.
 
 1
+
 You chose to feed Larry.
+
 Hunger: 36
+
 Thirst: 36
+
 Play: 42
+
 Sleep: 32
 
