@@ -20,6 +20,7 @@ What do you want to do?
 2. Give Larry Water.
 3. Play With Larry.
 4. Let Larry Sleep.
+
 1
 You chose to feed Larry.
 Hunger: 36
