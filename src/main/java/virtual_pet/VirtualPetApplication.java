@@ -14,30 +14,30 @@ public class VirtualPetApplication {
     }
 
     public static void whatActivity() {
-           System.out.println("What do you want to do?");
-           System.out.println("1. Feed Larry Food.");
-           System.out.println("2. Give Larry Water.");
-           System.out.println("3. Play With Larry.");
-           System.out.println("4. Let Larry Sleep.");
-           int myResponse = input.nextInt();
-           input.nextLine();
+        System.out.println("What do you want to do?");
+        System.out.println("1. Feed Larry Food.");
+        System.out.println("2. Give Larry Water.");
+        System.out.println("3. Play With Larry.");
+        System.out.println("4. Let Larry Sleep.");
+        int myResponse = input.nextInt();
+        input.nextLine();
 
-           if (myResponse == 1) {
-               System.out.println("You chose to feed Larry.");
-               virtualPet.getFood();
-           } else if (myResponse == 2) {
-               System.out.println("You chose to give Larry water.");
-               virtualPet.getWater();
-           } else if (myResponse == 3) {
-               System.out.println("You chose to play with Larry.");
-               virtualPet.getPlay();
-           } else if (myResponse == 4) {
-               System.out.println("You chose to let Larry sleep.");
-               virtualPet.getSleep();
-           }
-           showLevels();
-           virtualPet.getTick();
-       }
+        if (myResponse == 1) {
+            System.out.println("You chose to feed Larry.");
+            virtualPet.getFood();
+        } else if (myResponse == 2) {
+            System.out.println("You chose to give Larry water.");
+            virtualPet.getWater();
+        } else if (myResponse == 3) {
+            System.out.println("You chose to play with Larry.");
+            virtualPet.getPlay();
+        } else if (myResponse == 4) {
+            System.out.println("You chose to let Larry sleep.");
+            virtualPet.getSleep();
+        }
+        showLevels();
+        virtualPet.getTick();
+    }
 
     public static void gameLoop() {
         while ((virtualPet.getDesireToEat() > 0 && virtualPet.getDesireToEat() < 60) && (virtualPet.getDesireToDrink() > 0 && virtualPet.getDesireToDrink() < 60) && (virtualPet.getDesireToPlay() > 0 && virtualPet.getDesireToPlay() < 60) && (virtualPet.getDesireToSleep() > 0 && virtualPet.getDesireToSleep() < 60)) {
