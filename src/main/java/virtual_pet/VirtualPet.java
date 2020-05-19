@@ -1,7 +1,9 @@
 package virtual_pet;
 
 import java.util.Random;
-
+/*
+ * Rename the methods that affect the instance variables to remove the word get from the beginning.
+ */
 public class VirtualPet {
 
     Random rand = new Random();

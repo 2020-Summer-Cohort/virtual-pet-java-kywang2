@@ -1,7 +1,11 @@
 package virtual_pet;
 
 import java.util.Scanner;
-
+/*
+ * I'm requesting some small changes in the comments below to help bring your clean code category evaluation up.
+ * The game loop has a comment about it's while condition and the VirtualPet class has a comment about method names.
+ * Reach out to me if you have any questions, other than those two things it looks great!
+ */
 public class VirtualPetApplication {
 
     static VirtualPet virtualPet = new VirtualPet();
@@ -40,6 +44,7 @@ public class VirtualPetApplication {
        }
 
     public static void gameLoop() {
+        // Consider placing this long conditional into it's own method to make it more clear what the condition of the game loop is.
         while ((virtualPet.getDesireToEat() > 0 && virtualPet.getDesireToEat() < 60) && (virtualPet.getDesireToDrink() > 0 && virtualPet.getDesireToDrink() < 60) && (virtualPet.getDesireToPlay() > 0 && virtualPet.getDesireToPlay() < 60) && (virtualPet.getDesireToSleep() > 0 && virtualPet.getDesireToSleep() < 60)) {
             whatActivity();
         }
