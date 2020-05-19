@@ -11,7 +11,7 @@ public class VirtualPet {
     private int desireToPlay = rand.nextInt(21) + 30;
     private int desireToSleep = rand.nextInt(21) + 30;
 
-    void getFood() {
+    void food() {
         desireToEat = desireToEat - 2;
     }
 
@@ -19,14 +19,14 @@ public class VirtualPet {
         return desireToEat;
     }
 
-    void getWater() {
+    void water() {
         desireToDrink = desireToDrink - 2;}
 
     int getDesireToDrink() {
         return desireToDrink;
     }
 
-    void getPlay() {
+    void play() {
         desireToPlay = desireToPlay - 2;
     }
 
@@ -34,7 +34,7 @@ public class VirtualPet {
         return desireToPlay;
     }
 
-    void getSleep() {
+    void sleep() {
         desireToSleep = desireToSleep - 2;
     }
 
@@ -42,7 +42,7 @@ public class VirtualPet {
         return desireToSleep;
     }
 
-    void getTick() {
+    void tick() {
         desireToEat = desireToEat + 1;
         desireToDrink = desireToDrink + 1;
         desireToPlay = desireToPlay + 1;

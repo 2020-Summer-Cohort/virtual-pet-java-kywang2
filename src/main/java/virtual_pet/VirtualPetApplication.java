@@ -24,25 +24,23 @@ public class VirtualPetApplication {
 
         if (myResponse == 1) {
             System.out.println("You chose to feed Larry.");
-            virtualPet.getFood();
+            virtualPet.food();
         } else if (myResponse == 2) {
             System.out.println("You chose to give Larry water.");
-            virtualPet.getWater();
+            virtualPet.water();
         } else if (myResponse == 3) {
             System.out.println("You chose to play with Larry.");
-            virtualPet.getPlay();
+            virtualPet.play();
         } else if (myResponse == 4) {
             System.out.println("You chose to let Larry sleep.");
-            virtualPet.getSleep();
+            virtualPet.sleep();
         }
         showLevels();
-        virtualPet.getTick();
+        virtualPet.tick();
     }
 
     public static void gameLoop() {
-        while ((virtualPet.getDesireToEat() > 0 && virtualPet.getDesireToEat() < 60) && (virtualPet.getDesireToDrink() > 0 && virtualPet.getDesireToDrink() < 60) && (virtualPet.getDesireToPlay() > 0 && virtualPet.getDesireToPlay() < 60) && (virtualPet.getDesireToSleep() > 0 && virtualPet.getDesireToSleep() < 60)) {
-            whatActivity();
-        }
+        gamePlay();
         gameOver();
     }
 
@@ -67,5 +65,16 @@ public class VirtualPetApplication {
         System.out.println("Thirst: " + thirstLevel);
         System.out.println("Play: " + playLevel);
         System.out.println("Sleep: " + sleepLevel);
+        System.out.println("Make sure you don't let any level get to 60!");
+    }
+
+    public static void gamePlay() {
+        while ((virtualPet.getDesireToEat() > 0 && virtualPet.getDesireToEat() < 60) &&
+                (virtualPet.getDesireToDrink() > 0 && virtualPet.getDesireToDrink() < 60) &&
+                (virtualPet.getDesireToPlay() > 0 && virtualPet.getDesireToPlay() < 60) &&
+                (virtualPet.getDesireToSleep() > 0 && virtualPet.getDesireToSleep() < 60))
+        {
+            whatActivity();
+        }
     }
 }
